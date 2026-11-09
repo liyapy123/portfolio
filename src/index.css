@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-cream: #FFF6EC;
+    --text-plum: #3B1F3F;
+    --accent-pink: #FF4F9A;
+    --accent-orange: #FF8A3D;
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FFF6EC;
+  }
+  .dark ::-webkit-scrollbar-track {
+    background: #150918;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FF4F9A;
+    border-radius: 9999px;
+    border: 2px solid #FFF6EC;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    border-color: #150918;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF8A3D;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Custom typography & effects */
+.font-headline {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-script {
+  font-family: 'Caveat', cursive;
+}
+
+/* Subtle grain overlay for rich editorial feel */
+.bg-grain {
+  background-image: radial-gradient(rgba(59, 31, 63, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+.dark .bg-grain {
+  background-image: radial-gradient(rgba(255, 246, 236, 0.05) 1px, transparent 0);
+}
+
+/* Polaroids & cards */
+.polaroid-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+/* Marquee infinite animation */
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 35s linear infinite;
+}
+
+.animate-marquee-infinite:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbar for clean horizontal card carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

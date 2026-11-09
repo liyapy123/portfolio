@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Liya Py | B.Tech CSE (Artificial Intelligence)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FFF6EC;
+      --card: #FFFFFF;
+      --text: #3B1F3F;
+      --pink: #FF4F9A;
+      --orange: #FF8A3D;
+      --muted: #6B5B6D;
+      --border: rgba(59, 31, 63, 0.12);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 24px;
+      padding: 48px;
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 40px rgba(59, 31, 63, 0.08);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    .name-title h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 46px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .name-title h1 span {
+      color: var(--pink);
+    }
+    .name-title p {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .contact-info {
+      text-align: right;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .contact-info a {
+      color: var(--pink);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .actions-bar {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      background: var(--text);
+      color: var(--bg);
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: var(--pink);
+    }
+    .section {
+      margin-bottom: 28px;
+    }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text);
+      border-left: 4px solid var(--pink);
+      padding-left: 10px;
+      margin-bottom: 14px;
+    }
+    .entry {
+      margin-bottom: 16px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .entry-sub {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .entry-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .badge {
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--bg);
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+    }
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+      }
+      .actions-bar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="actions-bar">
+    <a href="/" class="btn" style="background: rgba(59,31,63,0.1); color: #3B1F3F;">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="name-title">
+        <h1>Liya Py<span>.</span></h1>
+        <p>B.Tech Computer Science Engineering (Artificial Intelligence)</p>
+      </div>
+      <div class="contact-info">
+        <div>Thrissur, Kerala, India</div>
+        <div><a href="mailto:liya.py.cse@gmail.com">liya.py.cse@gmail.com</a></div>
+        <div>GitHub: <a href="https://github.com/liyapy" target="_blank">github.com/liyapy</a></div>
+        <div>LinkedIn: <a href="https://linkedin.com/in/liyapy" target="_blank">linkedin.com/in/liyapy</a></div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>Thejus Engineering College (KTU)</span>
+          <span>2024 – 2028</span>
+        </div>
+        <div class="entry-sub">B.Tech in Computer Science and Engineering (Artificial Intelligence) • Thrissur, Kerala</div>
+        <div class="entry-desc">
+          Current coursework: Data Structures, C Programming, Discrete Mathematics, Foundations of AI. Active participant in IEDC cell and campus coding clubs.
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>NSS HSS Mullurkara</span>
+          <span>2022 – 2024</span>
+        </div>
+        <div class="entry-sub">Plus One & Plus Two (Computer Science) • Kerala State Board • Distinction</div>
+        <div class="entry-desc">
+          Focused on Computer Science, Python fundamentals, mathematics, and problem solving. 1st Prize Winner in Oppana dance at Youth Kalolsavam.
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="entry-desc" style="margin-bottom: 8px;"><strong>Programming Languages:</strong> Python, C, JavaScript (ES6+), Java (Basics)</div>
+      <div class="entry-desc" style="margin-bottom: 8px;"><strong>AI & Data Science:</strong> NumPy, Pandas, OpenCV, Scikit-Learn Basics, Prompt Engineering, Gemini API</div>
+      <div class="entry-desc" style="margin-bottom: 8px;"><strong>Frontend & Web:</strong> React.js, Tailwind CSS, HTML5, CSS3, Vite, Framer Motion</div>
+      <div class="entry-desc"><strong>Tools & Workflow:</strong> Git, GitHub, VS Code, Linux/Bash basics, Figma</div>
+    </div>
+
+    <!-- Key Projects -->
+    <div class="section">
+      <div class="section-title">Academic & Personal Projects</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>AttendAI — Smart Facial Recognition Attendance System</span>
+          <span>Python, OpenCV, Tkinter, SQLite</span>
+        </div>
+        <div class="entry-desc">
+          Engineered an automated face detection and verification attendance application for college classrooms with 96% detection accuracy and automated warning triggers for students below 75% attendance.
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>CampusBuddy AI — Student Assistant for Thejus College</span>
+          <span>React, Gemini API, Tailwind CSS</span>
+        </div>
+        <div class="entry-desc">
+          Created a conversational assistant tailored for college freshers to answer questions about KTU credit rules, college bus routes from Thrissur, and internal exam schedules.
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <span>AuraCast — Kerala Weather & Flood Alert Portal</span>
+          <span>React, OpenWeather API, Framer Motion</span>
+        </div>
+        <div class="entry-desc">
+          Developed a localized weather tracker for Kerala's 14 districts featuring live precipitation alerts, humidity metrics, and monsoon warnings.
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications & Honors -->
+    <div class="section">
+      <div class="section-title">Certifications & Honors</div>
+      <div class="entry-desc" style="margin-bottom: 6px;">• <strong>1st Prize Winner in Oppana (ഒപ്പന):</strong> Youth Cultural Festival • NSS HSS Mullurkara (2023–2024)</div>
+      <div class="entry-desc" style="margin-bottom: 6px;">• <strong>Python for Data Science & AI:</strong> Cognitive Class / Coursera (2024)</div>
+      <div class="entry-desc" style="margin-bottom: 6px;">• <strong>IEDC College Ideathon Participant:</strong> Thejus Engineering College IEDC Cell (2024)</div>
+      <div class="entry-desc" style="margin-bottom: 6px;">• <strong>Responsive Web Design Certification:</strong> freeCodeCamp (2024)</div>
+      <div class="entry-desc">• <strong>HackerRank Python Skill Badge:</strong> Certified in Python problem solving</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
