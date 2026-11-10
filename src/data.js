@@ -59,11 +59,11 @@ export const personalData = {
       },
       {
         id: 3,
-        title: "Projects & Achievements",
-        caption: "College, ideas & innovation 🚀",
+        title: "Honors & Achievements",
+        caption: "Oppana 1st prize & milestones 🏆",
         rotation: -2,
         image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80",
-        alt: "College projects, creative ideas, and future innovation"
+        alt: "Honors, achievements and creative milestones"
       },
       {
         id: 4,

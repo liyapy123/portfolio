@@ -16,7 +16,7 @@ export const Achievements = () => {
   };
 
   return (
-    <section className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-cream-50 dark:bg-plum/40 overflow-hidden transition-colors duration-300">
+    <section id="achievements" className="relative py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-cream-50 dark:bg-plum/40 overflow-hidden transition-colors duration-300">
       
       {/* Background Starburst */}
       <div className="absolute top-12 right-12 opacity-25 dark:opacity-10 pointer-events-none">

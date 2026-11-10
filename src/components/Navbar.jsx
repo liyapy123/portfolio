@@ -25,7 +25,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       lastScrollY = currentScrollY;
 
       // Detect active section
-      const sections = ['about', 'skills', 'projects', 'journey', 'contact'];
+      const sections = ['about', 'skills', 'journey', 'achievements', 'contact'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
@@ -48,8 +48,8 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
   const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
     { name: 'Journey', href: '#journey' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' }
   ];
 
