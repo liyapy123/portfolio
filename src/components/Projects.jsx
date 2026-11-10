@@ -353,7 +353,7 @@ export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [filter, setFilter] = useState('All');
 
-  const categories = ['All', 'AI & Computer Vision', 'NLP & Web', 'Web Application', 'Frontend & Animation'];
+  const categories = ['All', 'College Projects', 'Creative Ideas', 'Future Innovation'];
 
   const filteredProjects = filter === 'All' 
     ? projects 

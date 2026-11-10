@@ -59,11 +59,11 @@ export const personalData = {
       },
       {
         id: 3,
-        title: "3D Robots & AI",
-        caption: "Future is here 🤖✨",
+        title: "Projects & Achievements",
+        caption: "College, ideas & innovation 🚀",
         rotation: -2,
-        image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=700&q=80",
-        alt: "Futuristic humanoid robot sitting and reading"
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80",
+        alt: "College projects, creative ideas, and future innovation"
       },
       {
         id: 4,
@@ -187,9 +187,9 @@ export const personalData = {
     {
       id: "attend-ai",
       title: "AttendAI — Smart Classroom Attendance",
-      category: "AI & Computer Vision",
-      badge: "Featured AI Project",
-      shortDescription: "An automated student attendance system using face recognition and QR verification to eliminate proxy attendance in college lecture halls.",
+      category: "College Projects",
+      badge: "College Project 🎓",
+      shortDescription: "An automated student attendance system using face recognition and QR verification to eliminate proxy attendance in Thejus college lecture halls.",
       fullDescription: "Built specifically to solve manual roll-call inefficiencies in college classrooms. Features a computer vision pipeline that recognizes registered students in real-time webcam frames, records timestamps into a database, and generates weekly percentage attendance reports with automated warning triggers for students below 75%.",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
       tags: ["Python", "OpenCV", "Face Recognition", "Tkinter / React", "SQLite"],
@@ -201,8 +201,8 @@ export const personalData = {
     {
       id: "thejus-campus-ai",
       title: "CampusBuddy AI — Thejus Student Assistant",
-      category: "NLP & Web",
-      badge: "Campus Favorite",
+      category: "College Projects",
+      badge: "College Project 🎓",
       shortDescription: "An AI-powered conversational chatbot trained on campus FAQs, KTU syllabus rules, department details, and college bus routes.",
       fullDescription: "A conversational assistant designed for first-year freshers at Thejus Engineering College. It answers questions about internal exams, KTU credit requirements, bus timings from Thrissur town, and club activities using intelligent prompt engineering and a friendly conversational tone.",
       image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
@@ -213,10 +213,24 @@ export const personalData = {
       metrics: "Instant answer response in <1.2 seconds"
     },
     {
+      id: "agripulse-ai",
+      title: "AgriPulse AI — Crop Disease Diagnostic",
+      category: "Creative Ideas",
+      badge: "Creative Idea 💡",
+      shortDescription: "An AI concept pitched at Thejus IEDC Ideathon to help local Kerala farmers detect plant diseases from leaf photos.",
+      fullDescription: "Born from a creative ideation session to address pepper and paddy crop blights in Thrissur. Uses lightweight image classification models to diagnose leaf lesions in real-time and provide organic, cost-effective remedies in Malayalam and English.",
+      image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80",
+      tags: ["Computer Vision", "Python", "TensorFlow Lite", "Agriculture AI", "Malayalam UI"],
+      githubUrl: "https://github.com/liyapy/agripulse-ai",
+      liveUrl: "#",
+      featured: true,
+      metrics: "Pitched at College Ideathon • 92% leaf classification"
+    },
+    {
       id: "auracast-kerala",
-      title: "AuraCast — Kerala District Weather & Alerts",
-      category: "Web Application",
-      badge: "API Project",
+      title: "AuraCast — Kerala Weather & Monsoon Alerts",
+      category: "Creative Ideas",
+      badge: "Creative Idea 💡",
       shortDescription: "Clean, responsive weather dashboard with live Kerala monsoon precipitation tracking and district weather warnings.",
       fullDescription: "A customized weather web application tailored for Kerala's 14 districts. Features live temperature, humidity, monsoon precipitation index, animated sky conditions, and emergency weather alert warnings using OpenWeatherMap API and browser geolocation.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80",
@@ -227,18 +241,32 @@ export const personalData = {
       metrics: "Live data across all 14 Kerala districts"
     },
     {
-      id: "personal-portfolio-v1",
-      title: "Liya's Editorial Portfolio (This Site)",
-      category: "Frontend & Animation",
-      badge: "Design & Interaction",
-      shortDescription: "An expressive, editorial-inspired portfolio featuring warm cream aesthetic, smooth Lenis scrolling, and playful sticker interactions.",
-      fullDescription: "Designed with a warm editorial vibe inspired by modern indie digital magazines. Packed with micro-interactions, smooth scrolling via Lenis, interactive 3D perspective cards, dynamic dark mode, and mobile-first responsiveness.",
+      id: "neurovision-ai",
+      title: "NeuroVision — AI Gesture Control Interface",
+      category: "Future Innovation",
+      badge: "Future Innovation 🚀",
+      shortDescription: "A touchless computing concept using real-time hand landmark tracking and deep learning for accessibility.",
+      fullDescription: "An exploratory innovation exploring touchless interaction for healthcare and sterile environments. Uses MediaPipe hand tracking to map air gestures to mouse controls, virtual typing, and wheelchair navigation.",
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
-      tags: ["React", "Vite", "Tailwind CSS", "GSAP", "Lenis", "Framer Motion"],
-      githubUrl: "https://github.com/liyapy/liya-portfolio",
+      tags: ["MediaPipe", "Python", "Deep Learning", "Human-Computer Interaction", "Accessibility"],
+      githubUrl: "https://github.com/liyapy/neurovision",
+      liveUrl: "#",
+      featured: true,
+      metrics: "Sub-20ms hand landmark latency"
+    },
+    {
+      id: "personal-portfolio-v1",
+      title: "Interactive AI Editorial Portfolio",
+      category: "Future Innovation",
+      badge: "Future Innovation 🚀",
+      shortDescription: "Modern single-page portfolio with live 3D physics-driven AI robot companion, Lenis smooth scroll, and warm editorial design.",
+      fullDescription: "Designed with a warm editorial aesthetic inspired by modern creative studios. Features an interactive SVG robot companion with mouse-follow physics, 3D card tilt, dark mode persistence, and responsive micro-interactions.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      tags: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Lenis", "GSAP"],
+      githubUrl: "https://github.com/liyapy123/portfolio",
       liveUrl: "#",
       featured: false,
-      metrics: "100/100 responsive UX & smooth 60fps animations"
+      metrics: "60fps smooth animations • Interactive AI Companion"
     }
   ],
 
@@ -281,40 +309,54 @@ export const personalData = {
       title: "1st Prize in Oppana (Youth Kalolsavam)",
       issuer: "Youth Cultural Festival • NSS HSS Mullurkara",
       date: "2023 – 2024",
-      badge: "1st Prize Winner 🏆",
-      description: "Secured First Place in the traditional Oppana dance competition, showcasing synchronized clapping rhythm, stage elegance, and celebratory Malabar choreography."
+      badge: "Cultural Excellence 🏆",
+      category: "Creative Arts",
+      description: "Secured First Place in the traditional Oppana dance competition, showcasing synchronized rhythm, team coordination, and celebratory Malabar choreography."
     },
     {
       id: 1,
-      title: "Python for Data Science & AI",
-      issuer: "Cognitive Class / Coursera",
+      title: "Thejus IEDC College Ideathon Pitch",
+      issuer: "Thejus Engineering College IEDC Cell",
       date: "2024",
-      badge: "Certification",
-      description: "Comprehensive coverage of Python syntax, NumPy array computations, Pandas dataframes, and foundational statistical libraries."
+      badge: "College Project 🎓",
+      category: "College Projects",
+      description: "Pitched an AI-assisted crop disease identifier concept tailored for local Kerala agriculture during the campus student innovation meet."
     },
     {
       id: 2,
-      title: "IEDC College Ideathon Participant",
-      issuer: "Thejus Engineering College IEDC Cell",
+      title: "Python for Data Science & AI",
+      issuer: "Cognitive Class / Coursera",
       date: "2024",
-      badge: "Hackathon",
-      description: "Pitched an AI-assisted crop disease identifier concept tailored for local Kerala agriculture during the campus ideation meet."
+      badge: "Technical Certification 📜",
+      category: "Future Innovation",
+      description: "Comprehensive coverage of Python syntax, NumPy array computations, Pandas dataframes, and foundational statistical libraries for AI models."
     },
     {
       id: 3,
-      title: "Responsive Web Design Certification",
-      issuer: "freeCodeCamp",
-      date: "2024",
-      badge: "Web Dev",
-      description: "Mastered responsive layouts, modern CSS Grid/Flexbox architectures, and web accessibility standards."
+      title: "Creative AI & Innovation Ideator",
+      issuer: "College Tech Fest & Campus Hackathons",
+      date: "2024 – 2025",
+      badge: "Creative Ideas 💡",
+      category: "Creative Ideas",
+      description: "Brainstorming and prototyping impactful AI solutions including campus chatbots, smart attendance systems, and computer vision tools."
     },
     {
       id: 4,
-      title: "HackerRank Problem Solving (Python)",
-      issuer: "HackerRank",
+      title: "Smart India Hackathon (SIH) Aspirant",
+      issuer: "National Innovation Council",
+      date: "2025 Vision",
+      badge: "Future Innovation 🚀",
+      category: "Future Innovation",
+      description: "Preparing prototype architectures in real-time computer vision and voice intelligence for upcoming national collegiate hackathons."
+    },
+    {
+      id: 5,
+      title: "Responsive Web Design Certification",
+      issuer: "freeCodeCamp",
       date: "2024",
-      badge: "Skill Badge",
-      description: "Consistently practicing algorithms, string manipulation, data structures, and conditional logic."
+      badge: "Web Dev 🌐",
+      category: "College Projects",
+      description: "Mastered responsive layouts, modern CSS Grid/Flexbox architectures, and web accessibility standards."
     }
   ],
 
