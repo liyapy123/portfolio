@@ -70,8 +70,8 @@ export const personalData = {
         title: "Kerala Campus Vibe",
         caption: "Vellarakkad, Thrissur 🌴",
         rotation: 4,
-        image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=700&q=80",
-        alt: "Lush green college campus pathway surrounded by tropical trees"
+        image: "/images/campus-vibe.jpg",
+        alt: "College campus memories, bus journeys and friends at Thejus"
       }
     ]
   },
