@@ -59,19 +59,19 @@ export const personalData = {
       },
       {
         id: 3,
-        title: "AI & App Studio",
-        caption: "Crafting intelligent UIs 🤖",
+        title: "3D Robots & AI",
+        caption: "Future is here 🤖✨",
         rotation: -2,
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80",
-        alt: "Modern data analytics and AI interface design on screen"
+        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=700&q=80",
+        alt: "Futuristic 3D robot with glowing blue eyes and metallic body"
       },
       {
         id: 4,
         title: "Kerala Campus Vibe",
         caption: "Vellarakkad, Thrissur 🌴",
         rotation: 4,
-        image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=700&q=80",
-        alt: "Sunlit tropical palm greenery and campus atmosphere"
+        image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=700&q=80",
+        alt: "Lush green college campus pathway surrounded by tropical trees"
       }
     ]
   },
