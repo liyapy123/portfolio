@@ -42,8 +42,17 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen pt-28 md:pt-36 pb-20 md:pb-32 px-4 sm:px-6 lg:px-8 flex flex-col justify-between overflow-hidden bg-cream-100 dark:bg-plum-darkBg transition-colors duration-300">
+    <section className="relative min-h-screen pt-28 md:pt-36 pb-20 md:pb-32 px-4 sm:px-6 lg:px-8 flex flex-col justify-between overflow-hidden bg-plum-darkBg transition-colors duration-300">
       
+      {/* Background Wallpaper Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+      >
+        {/* Soft overlay gradient to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-plum-darkBg/70" />
+      </div>
+
       {/* Rotated Left Side Text */}
       <RotatedSideText text={hero.rotatedText} />
 
@@ -79,9 +88,9 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="mb-4 sm:mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-plum/5 dark:bg-cream-100/10 border border-plum/10 dark:border-cream-100/15 text-plum dark:text-cream-100 text-xs sm:text-sm font-semibold tracking-wide"
+          className="mb-4 sm:mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-cream-100 text-xs sm:text-sm font-semibold tracking-wide"
         >
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>{hero.badge}</span>
         </motion.div>
 
@@ -94,10 +103,10 @@ export const Hero = () => {
         >
           <motion.h1
             variants={itemVariants}
-            className="font-headline text-5xl sm:text-7xl md:text-8xl lg:text-[112px] font-extrabold text-plum dark:text-cream-100 tracking-tight leading-[0.92] uppercase"
+            className="font-headline text-5xl sm:text-7xl md:text-8xl lg:text-[112px] font-extrabold text-cream-100 tracking-tight leading-[0.92] uppercase drop-shadow-md"
           >
             {hero.headlinePart1}{' '}
-            <span className="text-pink-accent inline-block underline decoration-pink-accent/30 decoration-wavy decoration-2">
+            <span className="text-pink-accent inline-block underline decoration-pink-accent/40 decoration-wavy decoration-2">
               {hero.headlineAccent}
             </span>
           </motion.h1>
@@ -108,7 +117,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="max-w-2xl text-base sm:text-lg md:text-xl text-plum/80 dark:text-cream-100/80 font-medium leading-relaxed mb-8 md:mb-10 px-2"
+          className="max-w-2xl text-base sm:text-lg md:text-xl text-cream-100/90 font-medium leading-relaxed mb-8 md:mb-10 px-2 drop-shadow-sm"
         >
           {hero.subtext}
         </motion.p>
@@ -120,12 +129,12 @@ export const Hero = () => {
           transition={{ duration: 0.7, delay: 0.45 }}
           className="flex flex-wrap items-center justify-center gap-5 sm:gap-8 mb-14 md:mb-20"
         >
-          {/* Solid Plum Pill Button */}
+          {/* Solid Pill Button */}
           <motion.button
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => scrollTo('#contact')}
-            className="group px-7 sm:px-8 py-3.5 sm:py-4 bg-plum dark:bg-cream-100 text-cream-100 dark:text-plum rounded-full font-bold text-sm sm:text-base flex items-center gap-2.5 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-pink-accent dark:hover:bg-pink-accent dark:hover:text-white"
+            className="group px-7 sm:px-8 py-3.5 sm:py-4 bg-cream-100 text-plum rounded-full font-bold text-sm sm:text-base flex items-center gap-2.5 shadow-xl hover:shadow-2xl transition-all duration-300 hover:bg-pink-accent hover:text-white"
           >
             <span>{hero.primaryCta}</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -134,7 +143,7 @@ export const Hero = () => {
           {/* Text link with downward arrow */}
           <button
             onClick={() => scrollTo('#about')}
-            className="group font-bold text-sm sm:text-base text-plum dark:text-cream-100 flex items-center gap-2 hover:text-pink-accent dark:hover:text-pink-accent transition-colors py-2"
+            className="group font-bold text-sm sm:text-base text-cream-100 flex items-center gap-2 hover:text-pink-accent transition-colors py-2"
           >
             <span>{hero.secondaryCta}</span>
             <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-1 text-orange-accent" />

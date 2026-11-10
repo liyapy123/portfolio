@@ -67,6 +67,12 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-cream-100 dark:bg-plum-darkBg text-plum dark:text-cream-100 font-body selection:bg-pink-accent selection:text-white transition-colors duration-300">
       
+      {/* Ambient Background Wallpaper */}
+      <div 
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat pointer-events-none opacity-0 dark:opacity-40 transition-opacity duration-700"
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+      />
+
       {/* Top hot pink scroll progress bar */}
       <ScrollProgressBar />
 
