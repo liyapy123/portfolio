@@ -312,16 +312,16 @@ export const HeroRobotBackground = () => {
   return (
     <div
       ref={robotRef}
-      className="absolute right-2 sm:right-6 md:right-12 lg:right-16 top-20 sm:top-24 md:top-28 z-20 pointer-events-auto select-none"
-      style={{ perspective: 1100 }}
+      className="absolute right-1 sm:right-4 md:right-8 lg:right-12 top-14 sm:top-18 md:top-20 z-20 pointer-events-auto select-none"
+      style={{ perspective: 1200 }}
     >
       {/* Draggable & Floating Container */}
       <motion.div
         drag
-        dragConstraints={{ left: -220, right: 100, top: -60, bottom: 260 }}
+        dragConstraints={{ left: -360, right: 120, top: -80, bottom: 340 }}
         dragElastic={0.16}
-        whileDrag={{ scale: 1.1, cursor: 'grabbing' }}
-        whileHover={{ scale: 1.05 }}
+        whileDrag={{ scale: 1.08, cursor: 'grabbing' }}
+        whileHover={{ scale: 1.04 }}
         onClick={handleClick}
         className="relative cursor-grab active:cursor-grabbing flex flex-col items-center"
         style={{
@@ -334,16 +334,16 @@ export const HeroRobotBackground = () => {
         <AnimatePresence>
           {showBubble && (
             <motion.div
-              initial={{ opacity: 0, y: 14, scale: 0.75 }}
+              initial={{ opacity: 0, y: 16, scale: 0.75 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 8, scale: 0.75 }}
+              exit={{ opacity: 0, y: 10, scale: 0.75 }}
               transition={{ type: 'spring', stiffness: 380, damping: 22 }}
-              className="absolute -top-14 sm:-top-16 z-50 pointer-events-none whitespace-nowrap"
+              className="absolute -top-16 sm:-top-20 z-50 pointer-events-none whitespace-nowrap"
             >
-              <div className="relative bg-white/95 dark:bg-plum/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-2xl border-2 border-pink-accent/50 text-xs sm:text-sm font-extrabold text-plum dark:text-cream-100 flex items-center gap-1.5">
+              <div className="relative bg-white/95 dark:bg-plum/95 backdrop-blur-md px-5 py-2.5 rounded-2xl shadow-2xl border-2 border-pink-accent/50 text-sm sm:text-base font-extrabold text-plum dark:text-cream-100 flex items-center gap-2">
                 <span>{bubbleText}</span>
                 <span
-                  className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-0 h-0 border-x-[8px] border-x-transparent border-t-[9px] border-t-white/95 dark:border-t-plum/95"
+                  className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-0 h-0 border-x-[9px] border-x-transparent border-t-[10px] border-t-white/95 dark:border-t-plum/95"
                 />
               </div>
             </motion.div>
@@ -355,20 +355,20 @@ export const HeroRobotBackground = () => {
           <motion.div
             key={spark.id}
             initial={{ opacity: 1, scale: 0.4, x: 0, y: 0 }}
-            animate={{ opacity: 0, scale: 1.8, x: spark.x, y: spark.y }}
+            animate={{ opacity: 0, scale: 2.2, x: spark.x * 1.5, y: spark.y * 1.5 }}
             transition={{ duration: 0.65, ease: 'easeOut' }}
             className="absolute top-1/2 left-1/2 rounded-full pointer-events-none z-40"
             style={{
-              width: spark.size,
-              height: spark.size,
+              width: spark.size * 1.4,
+              height: spark.size * 1.4,
               background: spark.color,
-              boxShadow: `0 0 12px ${spark.color}`,
+              boxShadow: `0 0 16px ${spark.color}`,
             }}
           />
         ))}
 
-        {/* Robot Main SVG Visual */}
-        <div className="relative w-40 h-52 sm:w-48 sm:h-60 md:w-56 md:h-72 lg:w-60 lg:h-76 drop-shadow-2xl">
+        {/* Robot Main SVG Visual - 100% Bigger (Double Size) */}
+        <div className="relative w-64 h-84 sm:w-80 sm:h-[420px] md:w-[420px] md:h-[550px] lg:w-[470px] lg:h-[620px] drop-shadow-2xl">
           <svg
             viewBox="0 0 200 270"
             className="w-full h-full overflow-visible"
