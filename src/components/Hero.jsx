@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUpRight, ArrowDown, Sparkles } from 'lucide-react';
 import { personalData } from '../data';
 import { Starburst, RotatingBadge, HandwrittenNote, RotatedSideText } from './Decorations';
+import { RobotCard } from './RobotCard';
 
 export const Hero = () => {
   const { hero } = personalData;
@@ -167,6 +168,10 @@ export const Hero = () => {
         {/* 4 Cards Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5 lg:gap-6 pt-4">
           {hero.cards.map((card, idx) => (
+            card.isRobot ? (
+              /* Interactive animated robot card */
+              <RobotCard key={card.id} card={card} />
+            ) : (
             <motion.div
               key={card.id}
               drag
@@ -222,6 +227,7 @@ export const Hero = () => {
                 </p>
               </div>
             </motion.div>
+            )
           ))}
         </div>
 

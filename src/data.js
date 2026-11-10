@@ -59,11 +59,10 @@ export const personalData = {
       },
       {
         id: 3,
+        isRobot: true,       // ← renders interactive RobotCard instead of image
         title: "3D Robots & AI",
         caption: "Future is here 🤖✨",
         rotation: -2,
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=700&q=80",
-        alt: "Futuristic 3D robot with glowing blue eyes and metallic body"
       },
       {
         id: 4,
